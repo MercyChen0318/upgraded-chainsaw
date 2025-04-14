@@ -55,8 +55,8 @@
       gap: 2rem;
     }
     #profile-img {
-  flex: 0 0 120px;
-  max-width: 120px;
+  flex: 0 0 160px;
+  max-width: 160px;
   height: auto;
   border-radius: 12px;
   border: 1px solid #444;
@@ -185,3 +185,13 @@
 </div>
 </div>
 </div>
+<script>
+  function showSection(id) {
+    document.querySelectorAll('.section').forEach(section => {
+      section.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+</body>
+</html>
