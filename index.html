@@ -66,6 +66,27 @@
       flex: 1;
       min-width: 280px;
     }
+    .work {
+      margin-bottom: 3.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid #333;
+    }
+    .work h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #FFE5CC;
+      margin-bottom: 0.5rem;
+    }
+    .work p {
+      margin: 0.3rem 0;
+      font-size: 1rem;
+      color: #FFE5CC;
+    }
+    .work audio, .work video, .work iframe {
+      width: 100%;
+      margin-top: 0.8rem;
+      border-radius: 8px;
+    }
     footer {
       text-align: center;
       padding: 3rem 1rem;
@@ -78,36 +99,34 @@
   <header>
     <h1>Mu-Hsi Chen｜陳慕曦</h1>
     <nav>
-  <a href="javascript:void(0)" onclick="showSection('about')">ABOUT｜關於我</a>
-  <div style="display:inline-block; position:relative;">
-    <a href="javascript:void(0)" onclick="toggleDropdown()">WORKS｜作品 ▾</a>
-    <div id="worksDropdown" style="display:none; position:absolute; background-color:#111; border:1px solid #333; padding:0.5rem 1rem; z-index:1000; text-align:left;">
-  <div style="display: flex; flex-direction: column; align-items: center; line-height: 0.7rem; font-size: 1.2rem; color: #666; margin-bottom: 0.25rem;">
-</div>
-      <a href="javascript:void(0)" style="display:block; padding:0.2rem 0; color:#aaa;" onclick="showSubsection('acousmatic-works')">‣Acousmatic Works｜電子音樂作品</a>
-      <a href="javascript:void(0)" style="display:block; padding:0.2rem 0; color:#aaa;" onclick="showSubsection('theatre-works')">‣Theatre Music｜劇場配樂作品</a>
-    </div>
-  </div>
-  <a href="javascript:void(0)" onclick="showSection('contact')">CONTACT｜聯絡</a>
-</nav>
+      <a href="#" onclick="showSection('about')">ABOUT｜關於我</a>
+      <div style="display:inline-block; position:relative;">
+        <a href="#" onclick="toggleDropdown()">WORKS｜作品 ▾</a>
+        <div id="worksDropdown" style="display:none; position:absolute; background-color:#111; border:1px solid #333; padding:0.5rem 1rem; z-index:1000; text-align:left;">
+          <a href="#" style="display:block; padding:0.2rem 0; color:#FFE5CC;" onclick="showSubsection('acousmatic-works')">Acousmatic Works｜電子音樂作品</a>
+          <a href="#" style="display:block; padding:0.2rem 0; color:#FFE5CC;" onclick="showSubsection('theatre-works')">Theatre Music｜劇場配樂作品</a>
+        </div>
+      </div>
+      <a href="#" onclick="showSection('contact')">CONTACT｜聯絡</a>
+    </nav>
   </header>
   <div class="container">
     <div id="about" class="section active">
-  <div class="about-flex">
-    <img id="profile-img" src="portrait.jpg" alt="Profile Photo" />
-    <div class="about-text">
-      <p>現就讀於國立陽明交通大學音樂研究所 (National Yang Ming Chiao Tung University, IMU) 主修電子音樂作曲，師事曾毓忠博士。創作類型多元，涵蓋實驗音樂、即興創作、電子音樂與程式互動、劇場配樂與流行音樂編曲等多元形式，致力於探索聲音與科技之間創作的敘事性與互動的可能。</p>
-  <p>其作品曾入選多項國際重要電子音樂節與研討會，包括：</p>
-  <ul>
-    <li>2022–2024 紐約電子音樂節（NYCEMF）</li>
-    <li>2023 國際電腦音樂大會（ICMC）</li>
-    <li>2022 國際電腦音樂與音訊技術研討會（WOCMAT）</li>
-  </ul>
-  <p>作品亦曾於紐約、中國深圳、台北、新竹、台灣當代文化實驗場（C-LAB）等地演出，持續參與跨領域、聲音藝術與科技創作之實驗場域。</p>
+      <div class="about-flex">
+        <img id="profile-img" src="portrait.jpg" alt="Profile Photo" />
+        <div class="about-text">
+          <p>現就讀於國立陽明交通大學音樂研究所 (National Yang Ming Chiao Tung University, IMU) 主修電子音樂作曲，師事曾毓忠博士。創作類型多元，涵蓋實驗音樂、即興創作、電子音樂與程式互動、劇場配樂與流行音樂編曲等多元形式，致力於探索聲音與科技之間創作的敘事性與互動的可能。</p>
+          <p>其作品曾入選多項國際重要電子音樂節與研討會，包括：</p>
+          <ul>
+            <li>2022–2024 紐約電子音樂節（NYCEMF）</li>
+            <li>2023 國際電腦音樂大會（ICMC）</li>
+            <li>2022 國際電腦音樂與音訊技術研討會（WOCMAT）</li>
+          </ul>
+          <p>作品亦曾於紐約、中國深圳、台北、新竹、台灣當代文化實驗場（C-LAB）等地演出，持續參與跨領域、聲音藝術與科技創作之實驗場域。</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
+   
 <div id="works" class="section">
   <div id="acousmatic-works" class="section">
     <h2 style="border-bottom: 1px solid #444; padding-bottom: 0.5rem; margin-bottom: 2rem;">‣Acousmatic Works｜電子音樂作品</h2>
