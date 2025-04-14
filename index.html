@@ -103,10 +103,10 @@
   <header>
     <h1>Mu-Hsi Chen｜陳慕曦</h1>
     <nav>
-      <a href="#" onclick="showSection('about')">ABOUT｜關於我</a>
-      <a href="#" onclick="showSection('works')">WORKS｜作品</a>
-      <a href="#" onclick="showSection('contact')">CONTACT｜聯絡</a>
-    </nav>
+  <a href="javascript:void(0)" onclick="showSection('about')">ABOUT｜關於我</a>
+  <a href="javascript:void(0)" onclick="showSection('works')">WORKS｜作品</a>
+  <a href="javascript:void(0)" onclick="showSection('contact')">CONTACT｜聯絡</a>
+</nav>
   </header>
   <div class="container">
     <div id="about" class="section active">
@@ -145,10 +145,7 @@
     <p>長度：5'50"</p>
     <p>展演紀錄：2023 C-LAB聲響藝術節校際單元 「⽿朵劇場-返響 電⼦與科技多聲道⾳樂會」（2023.11.18）和國⽴陽明交通⼤學⾳樂研究所電⼦科技⾳樂組⽵韻⾳樂會《聲繪》（2023.12.13）</p>
     <p>說明：此作品於2023年1⽉完成雙聲道版本，並於2023年11⽉利⽤Max/Msp中的Spat5程式製作成六聲道版 本，於2023 C-LAB聲響藝術節校際單元 「⽿朵劇場-返響 電⼦與科技多聲道⾳樂會」（2023.11.18）及國⽴陽明交通⼤學⾳樂研究所電⼦科技⾳樂組⽵韻⾳樂會《聲繪》（2023.12.13）中發表。 本曲使⽤⼈聲做為唯⼀的素材去調變發展，以聲響中噪⾳與樂⾳之間、顆粒與長⾳之間，以及⼈聲中⼦⾳與母⾳之間作為對比。全曲分為四個段落，表現⼈聲在⾳⾼呈現如同階梯的起伏，因此取名為「聲階」。</p>
-    <video controls poster="your-preview-image.jpg">
-      <source src="https://youtu.be/TCr1LmqA-T0?list=PL_SV5twIlIi06tfoZdRAPIFNe5jcG2Aet&t=1723" type="video/mp4">
-      您的瀏覽器不支援影片播放。
-    </video>
+    <iframe width="100%" height="360" src="https://www.youtube.com/embed/TCr1LmqA-T0?start=1723" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
   <div class="work">
@@ -199,7 +196,18 @@
       section.classList.remove('active');
     });
     document.getElementById(id).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // 自動滾到頂部
   }
+
+  // 加強穩定性：綁定所有 nav 連結點擊事件，避免預設行為
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("nav a").forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault(); // 防止跳轉
+      });
+    });
+  }););
+  });
 </script>
 </body>
 </html>
