@@ -17,7 +17,8 @@
       padding: 2rem 1rem 1rem;
       text-align: center;
     }
-    header h1 { font-size: 1.8rem;
+    header h1 {
+      font-size: 1.8rem;
       font-weight: 600;
       letter-spacing: 1px;
       color: #f4f4f4;
@@ -47,6 +48,24 @@
     .section.active {
       display: block;
     }
+    .about-flex {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    #profile-img {
+      flex: 0 0 220px;
+      max-width: 220px;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid #444;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    }
+    .about-text {
+      flex: 1;
+      min-width: 280px;
+    }
     .work {
       margin-bottom: 3.5rem;
       padding-bottom: 2.5rem;
@@ -67,17 +86,16 @@
       width: 100%;
       margin-top: 0.8rem;
     }
+    .work video {
+      width: 100%;
+      margin-top: 0.8rem;
+      border-radius: 8px;
+    }
     footer {
       text-align: center;
       padding: 3rem 1rem;
       font-size: 0.9rem;
       color: #666;
-    }
-    #profile-img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-top: 1rem;
     }
   </style>
 </head>
@@ -92,34 +110,17 @@
   </header>
   <div class="container">
     <div id="about" class="section active">
-      <img id="profile-img" src="/mnt/data/陳慕曦.JPG" alt="Profile Photo" />
-      <p>現就讀於國立陽明交通大學音樂研究所 (National Yang Ming Chiao Tung University, IMU) 主修電子音樂作曲，師事曾毓忠博士。創作類型多元，涵蓋實驗音樂、即興創作、電子音樂與程式互動、劇場配樂與流行音樂編曲等多元形式，致力於探索聲音與科技之間創作的敘事性與互動的可能。</p>
-      <p>其作品曾入選多項國際重要電子音樂節與研討會，包括：</p>
-      <ul>
-        <li>2022–2024 紐約電子音樂節（NYCEMF）</li>
-        <li>2023 國際電腦音樂大會（ICMC）</li>
-        <li>2022 國際電腦音樂與音訊技術研討會（WOCMAT）</li>
-      </ul>
-      <p>作品亦曾於紐約、中國深圳、台北、新竹、台灣當代文化實驗場（C-LAB）等地演出，持續參與跨領域、聲音藝術與科技創作之實驗場域。</p>
+      <div class="about-flex">
+        <img id="profile-img" src="portrait.jpg" alt="Profile Photo" />
+        <div class="about-text">
+          <p>現就讀於國立陽明交通大學音樂研究所 (National Yang Ming Chiao Tung University, IMU) 主修電子音樂作曲，師事曾毓忠博士。創作類型多元，涵蓋實驗音樂、即興創作、電子音樂與程式互動、劇場配樂與流行音樂編曲等多元形式，致力於探索聲音與科技之間創作的敘事性與互動的可能。</p>
+          <p>其作品曾入選多項國際重要電子音樂節與研討會，包括：</p>
+          <ul>
+            <li>2022–2024 紐約電子音樂節（NYCEMF）</li>
+            <li>2023 國際電腦音樂大會（ICMC）</li>
+            <li>2022 國際電腦音樂與音訊技術研討會（WOCMAT）</li>
+          </ul>
+          <p>作品亦曾於紐約、中國深圳、台北、新竹、台灣當代文化實驗場（C-LAB）等地演出，持續參與跨領域、聲音藝術與科技創作之實驗場域。</p>
+        </div>
+      </div>
     </div>
-    <div id="works" class="section">
-      <!-- 作品部分保持不變 -->
-    </div>
-    <div id="contact" class="section">
-      <p>如需聯絡請寄信至：<br />
-        <strong>lgoovde318@gmail.com</strong></p>
-    </div>
-  </div>
-  <footer>
-    &copy; 2025 陳慕曦 | 個人作品集網站
-  </footer>
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('.section').forEach(section => {
-        section.classList.remove('active');
-      });
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
-</body>
-</html>
