@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>陳慕曦｜作品集</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans TC', sans-serif;
+      background-color: #0b0b0b;
+      color: #eaeaea;
+    }
+    header {
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #f4f4f4;
+      margin-bottom: 1rem;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #aaa;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .section {
+      display: none;
+    }
+    .section.active {
+      display: block;
+    }
+    .about-flex {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    #profile-img {
+  flex: 0 0 160px;
+  max-width: 160px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #444;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+    .about-text {
+      flex: 1;
+      min-width: 280px;
+    }
+    .work {
+      margin-bottom: 3.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid #333;
+    }
+    .work h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+    .work p {
+      margin: 0.3rem 0;
+      font-size: 1rem;
+      color: #b0b0b0;
+    }
+    .work audio {
+      width: 100%;
+      margin-top: 0.8rem;
+    }
+    .work video {
+      width: 100%;
+      margin-top: 0.8rem;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mu-Hsi Chen｜陳慕曦</h1>
+    <nav>
+  <a href="javascript:void(0)" onclick="showSection('about')">-ABOUT｜關於我-</a>
+  <div style="display:inline-block; position:relative;">
+    <a href="javascript:void(0)" onclick="toggleDropdown()">-WORKS｜作品▾-</a>
+    <div id="worksDropdown" style="display:none; position:absolute; background-color:#111; border:1px solid #333; padding:0.5rem 1rem; z-index:1000; text-align:left;">
+      <a href="javascript:void(0)" style="display:block; padding:0.2rem 0; color:#aaa;" onclick="scrollToCategory('Acousmatic-Works')">‣Acousmatic Works｜電子音樂作品</a>
+      <a href="javascript:void(0)" style="display:block; padding:0.2rem 0; color:#aaa;" onclick="scrollToCategory('Theatre-Music')">‣Works for Theatre Music｜劇場配樂作品</a>
+    </div>
+  </div>
+  <a href="javascript:void(0)" onclick="showSection('contact')">-CONTACT｜聯絡-</a>
+</nav>
+  </header>
+  <div class="container">
+    <div id="about" class="section active">
+  <div class="about-flex">
+    <img id="profile-img" src="portrait.jpg" alt="Profile Photo" />
+    <div class="about-text">
+      <p>現就讀於國立陽明交通大學音樂研究所 (National Yang Ming Chiao Tung University, IMU) 主修電子音樂作曲，師事曾毓忠博士。創作類型多元，涵蓋實驗音樂、即興創作、電子音樂與程式互動、劇場配樂與流行音樂編曲等多元形式，致力於探索聲音與科技之間創作的敘事性與互動的可能。</p>
+  <p>其作品曾入選多項國際重要電子音樂節與研討會，包括：</p>
+  <ul>
+    <li>2022–2024 紐約電子音樂節（NYCEMF）</li>
+    <li>2023 國際電腦音樂大會（ICMC）</li>
+    <li>2022 國際電腦音樂與音訊技術研討會（WOCMAT）</li>
+  </ul>
+  <p>作品亦曾於紐約、中國深圳、台北、新竹、台灣當代文化實驗場（C-LAB）等地演出，持續參與跨領域、聲音藝術與科技創作之實驗場域。</p>
+    </div>
+  </div>
+</div>
+
+<div id="works" class="section">
+  <div id="Acousmatic-Works" class="work">
+  <h2 style="border-bottom: 1px solid #444; padding-bottom: 0.5rem; margin-bottom: 2rem;">Acousmatic Works｜電子音樂作品</h2>
+ <h2>Acousmatic Works｜電子音樂作品</h2>
+
+    <h2>Hearing 《聽見》 (2022)</h2>
+    <p>類型：Fixed media (2-channel)</p>
+    <p>長度：2'24"</p>
+    <p>展演紀錄：入選2023 ICMC國際電腦音樂大會，於深圳發表；入選2023紐約電子音樂節，於紐約發表。</p>
+    <p>說明：聲⾳音素材採⾃房間內開關衣櫃、摩擦杯⼦及放置東⻄的聲響，試著透過挖掘獨處在家中的⽇常，表達重複性、沒有⽣命⼒的模樣，以細碎、繁瑣的聲⾳姿態來傳達各樣內⼼情緒。
+(英文) The sound material is collected from the sound of opening and closing wardrobes, rubbing cups and placing things in the room. The composer tried to express the repetitive and lifeless appearance by digging out the daily life of being alone at home, and convey various inner emotions with fine and cumbersome sound gestures.</p>
+    <audio controls>
+      <source src="Hearing.mp3" type="audio/mpeg">
+      您的瀏覽器不支援音訊播放。
+    </audio>
+  </div>
+
+  <div class="work">
+    <p style="font-size: 0.9rem; color: #999; margin-top: -1rem;">分類：Acousmatic Works</p>
+    <h2>Voice Ladders 《聲階》(2023)</h2>
+    <p>類型：multichannel electronic music</p>
+    <p>長度：5'50"</p>
+    <p>展演紀錄：2023 C-LAB聲響藝術節校際單元 「⽿朵劇場-返響 電⼦與科技多聲道⾳樂會」（2023.11.18）和國⽴陽明交通⼤學⾳樂研究所電⼦科技⾳樂組⽵韻⾳樂會《聲繪》（2023.12.13）</p>
+    <p>說明：此作品於2023年1⽉完成雙聲道版本，並於2023年11⽉利⽤Max/Msp中的Spat5程式製作成六聲道版 本，於2023 C-LAB聲響藝術節校際單元 「⽿朵劇場-返響 電⼦與科技多聲道⾳樂會」（2023.11.18）及國⽴陽明交通⼤學⾳樂研究所電⼦科技⾳樂組⽵韻⾳樂會《聲繪》（2023.12.13）中發表。 本曲使⽤⼈聲做為唯⼀的素材去調變發展，以聲響中噪⾳與樂⾳之間、顆粒與長⾳之間，以及⼈聲中⼦⾳與母⾳之間作為對比。全曲分為四個段落，表現⼈聲在⾳⾼呈現如同階梯的起伏，因此取名為「聲階」。</p>
+    <iframe width="100%" height="360" src="https://www.youtube.com/embed/TCr1LmqA-T0?start=1723" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="work">
+    <p style="font-size: 0.9rem; color: #999; margin-top: -1rem;">分類：Acousmatic Works</p>
+    <h2>Collision《碰撞》(2024)</h2>
+    <p>類型：Fixed media (2-channel)</p>
+    <p>長度：5'21"</p>
+    <p>說明：《碰撞 Collision》是一首雙聲道電子音樂作品，使用Audition的Waveform編輯後製，透過集結各樣聲響元素，以表達人生中的種種碰撞和對抗。器物因互相碰撞而產生振動，產生出具有音高、能量及音色姿態的聲音，這些相互碰撞的組合組織成音樂，就如同生命為一連串的碰撞所組成，若不經過碰撞，是不會發出悅耳的聲響的。 樂曲開首就充滿了力道，從出生到世上那一刻生命就有許多挑戰。強烈的節奏和聲音效果代表著人生中的困難和逆境，而音樂中的變化和轉折則象徵著對抗的過程。音樂的循環和重複部分呼應著人生中不斷重複的挑戰，而每一次碰撞都是一次成長和淬煉。最終，音樂以純粹的頻率結束，表示回歸純真的意境。</p>
+    <audio controls>
+      <source src="Collision.mp3" type="audio/mpeg">
+      您的瀏覽器不支援音訊播放。
+    </audio>
+  </div>
+
+  <div class="work">
+    <p style="font-size: 0.9rem; color: #999; margin-top: -1rem;">分類：Acousmatic Works</p>
+    <h2>Out of the Wildness 《走出曠野》(2023)</h2>
+    <p>類型：為大提琴、預置與現場電子音樂</p>
+    <p>長度：9'44"</p>
+    <p>展演紀錄：2023 陽明交大《返響》電子音樂會</p>
+    <p>說明：《⾛出曠野》取材⾃聖經中以⾊列⼈出了埃及，在曠野⾏⾛四⼗年的故事，講述⽣命中常有如曠野般的旅程，是漫長、迷茫且煎熬的，作者試圖挖掘不同的低⾳管演奏技巧，包含傳統至現代特殊演奏技法，以呈現尋找⼈⽣解答的過程中，會有理智清晰和瀕臨崩潰的各種不同狀態，並且透過Max/Msp即時互動程式即時及預置電⼦⾳樂，擴展聲⾳的更多無限想像空間。曲⼦為四個段落：第⼀段以不規律的長⾳和短⾳交錯，描述旅程的開始的翻山越嶺 ; 第⼆段落使⽤猶太民族⾳樂常⾒節奏型態，為以⾊列⼈對上帝的敬拜 ; 第三段使⽤點描⼿法，呈現不安定⽽破碎的試煉困難 ; 第四段為Coda，以下屬調重現主題。</p>
+    <audio controls>
+      <source src="Out_of_the_Wildness.mp3" type="audio/mpeg">
+      您的瀏覽器不支援音訊播放。
+    </audio>
+  </div>
+
+  <div class="work">
+    <p style="font-size: 0.9rem; color: #999; margin-top: -1rem;">分類：Acousmatic Works</p>
+    <h2>The Lament of Prince Hamlet 《哈姆雷特王子的悲歌》(2024)</h2>
+    <p>類型：為長笛、預置與現場電子音樂</p>
+    <p>長度：8'28"</p>
+    <p>說明：本人選擇莎士比亞的劇作《哈姆雷特》中，哈姆雷特這個矛盾重重、哀傷難平的形象，試圖以音符刻畫他深邃而複雜的情感世界。透過長笛滄桑而遼闊的音色，結合互動電子音樂，這部作品詮釋了哈姆雷特王子悲劇性的命運與內心深處的掙扎。音樂隨著他複雜多變的情感推進，展現他對父親復仇的渴望、面對命運的無力感、無法擺脫的孤獨，以及失去愛人的痛心，層層鋪展出豐富而深刻的情緒畫面。
+為了實現這樣的音樂效果，我運用了多種數位音樂製作技術。使用Max/MSP錄製和創建電子合成的聲音素材，與進行長笛音色的效果器處理；聲音素材的編輯與篩選則使用Audition進行；並透過Ableton Live，創造出動態和多變的音響效果；最後，通過Logic Pro X將聲音素材與長笛錄音進行混音剪輯。</p>
+    <audio controls>
+      <source src="The_Lament_of_Prince_Hamlet.mp3" type="audio/mpeg">
+      您的瀏覽器不支援音訊播放。
+    </audio>
+  </div>
+</div>
+
+  <h2>Works for Theatre｜劇場作品</h2>
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/bbky9q8fwrkm/sets/unschuld&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+</iframe>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/bbky9q8fwrkm/sets/the-abandoner&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+</iframe>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/bbky9q8fwrkm/sets/la-casa-de-bernalda-alba&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+</iframe>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/bbky9q8fwrkm/sets/about-another-day2019&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+</iframe>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/bbky9q8fwrkm/sets/the-shine-family&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+</iframe>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+  src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/bbky9q8fwrkm/sets/der-gute-mensch-von-sezuan2017&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+</iframe>
+
+
+<div id="contact" class="section">
+  <p>如需聯絡請寄信至：<br />
+    <strong>lgoovde318@gmail.com</strong></p>
+</div>
+
+</div>
+<script>
+  function toggleDropdown() {
+    const dropdown = document.getElementById('worksDropdown');
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function scrollToCategory(category) {
+    showSection('works');
+    setTimeout(() => {
+      const elements = document.querySelectorAll('.work');
+      for (const el of elements) {
+        if (el.innerText.includes(`分類：${category}`)) {
+          el.scrollIntoView({ behavior: 'smooth' });
+          break;
+        }
+      }
+    }, 100);
+    toggleDropdown();
+  }
+  function showSection(id) {
+    document.querySelectorAll('.section').forEach(section => {
+      section.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // 自動滾到頂部
+  }
+
+  // 加強穩定性：綁定所有 nav 連結點擊事件，避免預設行為
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("nav a").forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault(); // 防止跳轉
+      });
+    });
+  });
+</script>
+</body>
+</html>
