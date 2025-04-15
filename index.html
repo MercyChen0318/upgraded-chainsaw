@@ -77,6 +77,12 @@
       color: #ffffff;
       margin-bottom: 0.5rem;
     }
+    .work h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
     .work p {
       margin: 0.3rem 0;
       font-size: 1rem;
@@ -107,8 +113,8 @@
   <div style="display:inline-block; position:relative;">
     <a href="javascript:void(0)" onclick="toggleDropdown()">-WORKS｜作品▾-</a>
     <div id="worksDropdown" style="display:none; position:absolute; background-color:#111; border:1px solid #333; padding:0.5rem 1rem; z-index:1000; text-align:left;">
-      <a href="javascript:void(0)" style="display:block; padding:0.2rem 0; color:#aaa;" onclick="showSection('Acousmatic-Works')">‣Acousmatic Works｜電子音樂作品</a>
-      <a href="javascript:void(0)" style="display:block; padding:0.2rem 0; color:#aaa;" onclick="showSection('Theatre-Music')">‣Works for Theatre Music｜劇場配樂作品</a>
+      <a href="javascript:void(0)" style="display:block; padding:0.2rem 0; color:#aaa;" onclick="scrollToCategory('Acousmatic-Works')">‣Acousmatic Works｜電子音樂作品</a>
+      <a href="javascript:void(0)" style="display:block; padding:0.2rem 0; color:#aaa;" onclick="scrollToCategory('Theatre-Music')">‣Works for Theatre Music｜劇場配樂作品</a>
     </div>
   </div>
   <a href="javascript:void(0)" onclick="showSection('contact')">-CONTACT｜聯絡-</a>
@@ -135,8 +141,10 @@
   <div class="Acousmatic-Works-flex">
   <div class="Acousmatic-Works-text">
   <h2 style="border-bottom: 1px solid #444; padding-bottom: 0.5rem; margin-bottom: 2rem;">Acousmatic Works｜電子音樂作品</h2>
-
-    <h2>Hearing 《聽見》 (2022)</h2>
+ 
+  <div class="Acousmatic-Works">
+    <p style="font-size: 0.9rem; color: #999; margin-top: -1rem;">分類：Acousmatic Works</p>
+    <h3>Hearing 《聽見》 (2022)</h3>
     <p>類型：Fixed media (2-channel)</p>
     <p>長度：2'24"</p>
     <p>展演紀錄：入選2023 ICMC國際電腦音樂大會，於深圳發表；入選2023紐約電子音樂節，於紐約發表。</p>
@@ -147,10 +155,10 @@
       您的瀏覽器不支援音訊播放。
     </audio>
   </div>
-
-  <div class="work">
+    
+  <div class="Acousmatic-Works">
     <p style="font-size: 0.9rem; color: #999; margin-top: -1rem;">分類：Acousmatic Works</p>
-    <h2>Voice Ladders 《聲階》(2023)</h2>
+    <h3>Voice Ladders 《聲階》(2023)</h3>
     <p>類型：multichannel electronic music</p>
     <p>長度：5'50"</p>
     <p>展演紀錄：2023 C-LAB聲響藝術節校際單元 「⽿朵劇場-返響 電⼦與科技多聲道⾳樂會」（2023.11.18）和國⽴陽明交通⼤學⾳樂研究所電⼦科技⾳樂組⽵韻⾳樂會《聲繪》（2023.12.13）</p>
@@ -158,9 +166,9 @@
     <iframe width="100%" height="360" src="https://www.youtube.com/embed/TCr1LmqA-T0?start=1723" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
-  <div class="work">
+  <div class="Acousmatic-Works">
     <p style="font-size: 0.9rem; color: #999; margin-top: -1rem;">分類：Acousmatic Works</p>
-    <h2>Collision《碰撞》(2024)</h2>
+    <h3>Collision《碰撞》(2024)</h3>
     <p>類型：Fixed media (2-channel)</p>
     <p>長度：5'21"</p>
     <p>說明：《碰撞 Collision》是一首雙聲道電子音樂作品，使用Audition的Waveform編輯後製，透過集結各樣聲響元素，以表達人生中的種種碰撞和對抗。器物因互相碰撞而產生振動，產生出具有音高、能量及音色姿態的聲音，這些相互碰撞的組合組織成音樂，就如同生命為一連串的碰撞所組成，若不經過碰撞，是不會發出悅耳的聲響的。 樂曲開首就充滿了力道，從出生到世上那一刻生命就有許多挑戰。強烈的節奏和聲音效果代表著人生中的困難和逆境，而音樂中的變化和轉折則象徵著對抗的過程。音樂的循環和重複部分呼應著人生中不斷重複的挑戰，而每一次碰撞都是一次成長和淬煉。最終，音樂以純粹的頻率結束，表示回歸純真的意境。</p>
@@ -170,9 +178,9 @@
     </audio>
   </div>
 
-  <div class="work">
+  <div class="Acousmatic-Works">
     <p style="font-size: 0.9rem; color: #999; margin-top: -1rem;">分類：Acousmatic Works</p>
-    <h2>Out of the Wildness 《走出曠野》(2023)</h2>
+    <h3>Out of the Wildness 《走出曠野》(2023)</h3>
     <p>類型：為大提琴、預置與現場電子音樂</p>
     <p>長度：9'44"</p>
     <p>展演紀錄：2023 陽明交大《返響》電子音樂會</p>
@@ -183,9 +191,9 @@
     </audio>
   </div>
 
-  <div class="work">
+  <div class="Acousmatic-Works">
     <p style="font-size: 0.9rem; color: #999; margin-top: -1rem;">分類：Acousmatic Works</p>
-    <h2>The Lament of Prince Hamlet 《哈姆雷特王子的悲歌》(2024)</h2>
+    <h3>The Lament of Prince Hamlet 《哈姆雷特王子的悲歌》(2024)</h3>
     <p>類型：為長笛、預置與現場電子音樂</p>
     <p>長度：8'28"</p>
     <p>說明：本人選擇莎士比亞的劇作《哈姆雷特》中，哈姆雷特這個矛盾重重、哀傷難平的形象，試圖以音符刻畫他深邃而複雜的情感世界。透過長笛滄桑而遼闊的音色，結合互動電子音樂，這部作品詮釋了哈姆雷特王子悲劇性的命運與內心深處的掙扎。音樂隨著他複雜多變的情感推進，展現他對父親復仇的渴望、面對命運的無力感、無法擺脫的孤獨，以及失去愛人的痛心，層層鋪展出豐富而深刻的情緒畫面。
